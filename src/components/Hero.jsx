@@ -84,14 +84,6 @@ export default function Hero() {
                 View Projects
                 <HiArrowRight className="w-5 h-5" />
               </button>
-              <a
-                href="/Resume.docx"
-                download="Resume.docx"
-                className="inline-flex items-center gap-2 w-full sm:w-auto justify-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-medium hover:shadow-lg hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 text-sm sm:text-base"
-              >
-                <HiDownload className="w-4 h-4" />
-                Download Resume
-              </a>
             </div>
 
             <div className="flex gap-3 sm:gap-4 pt-4 sm:pt-6 justify-center md:justify-start">
