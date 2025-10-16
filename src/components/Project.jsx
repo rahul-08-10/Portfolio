@@ -145,9 +145,9 @@ export default function Project() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-8 sm:mt-12 text-center"
         >
-          <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 text-white font-medium hover:bg-white/10 hover:scale-105 hover:border-[#F8961E]/30 transition-all duration-300 active:scale-95 text-sm sm:text-base">
+          {/* <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 text-white font-medium hover:bg-white/10 hover:scale-105 hover:border-[#F8961E]/30 transition-all duration-300 active:scale-95 text-sm sm:text-base">
             View All Projects →
-          </button>
+          </button> */}
         </motion.div>
       </div>
     </section>
