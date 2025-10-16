@@ -86,12 +86,12 @@ export default function Header() {
           </ul>
 
           <a
-            href="/PM role.docx"
-            download="PM role.docx"
-            className="inline-flex items-center gap-2 w-full sm:w-auto justify-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-medium hover:shadow-lg hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 text-sm sm:text-base"
+            href="/Resume.docx"
+            download="Resume.docx"
+            className="hidden md:inline-flex items-center gap-2 justify-center px-6 py-3.5 rounded-lg bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-medium hover:shadow-lg hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 text-base focus:ring-2 focus:ring-[#F8961E] focus:outline-none"
           >
-            <HiDownload className="w-4 h-4" />
-            Download Resume
+            <HiDownload className="w-5 h-5" />
+            <span>Download Resume</span>
           </a>
 
           <button
@@ -141,10 +141,11 @@ export default function Header() {
             <a
               href="/Resume.docx"
               download="Resume.docx"
-              className="inline-flex items-center gap-2 w-full sm:w-auto justify-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-medium hover:shadow-lg hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 text-sm sm:text-base"
+              className="inline-flex items-center gap-3 w-full max-w-xs justify-center px-8 py-5 rounded-xl bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-semibold text-lg shadow-md hover:shadow-xl hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 focus:ring-2 focus:ring-[#F8961E] focus:outline-none"
+              style={{ minHeight: 56 }}
             >
-              <HiDownload className="w-4 h-4" />
-              Download Resume
+              <HiDownload className="w-6 h-6" />
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
