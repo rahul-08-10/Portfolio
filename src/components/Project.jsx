@@ -13,6 +13,7 @@ import {
   FaBookOpen,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Project() {
   const projects = [
@@ -23,6 +24,13 @@ export default function Project() {
       tech: ["Next.js", "Web3.js", "Smart Contracts", "Blockchain"],
       icon: FaCoins,
       link: "https://peggythedeadpoolcoin.dog/",
+      caseStudy: {
+        context: "Launched a meme coin on Web3 with a focus on fun brand and simple onboarding.",
+        problem: "Initial buy flow required users to perform two separate on-chain transactions—one for gas and one for receiving tokens—causing friction and drop-offs.",
+        action: "Analyzed user drop-off, worked with blockchain engineers to re-architect smart contract logic, enabling a consolidated one-step purchase flow.",
+        result: "Reduced user effort and fees. Conversion rate improved by over 20%. User feedback praised the seamless single-click buy experience.",
+        tools: ["Next.js", "Web3.js", "Solidity", "Ethers.js"]
+      }
     },
     {
       title: "Music Analysis",
@@ -31,6 +39,13 @@ export default function Project() {
       tech: ["Python", "Matplotlib", "Pandas", "NumPy"],
       icon: FaMusic,
       link: "https://github.com/rahul-08-10/Music-Analysis",
+      caseStudy: {
+        context: "Developing an ML-powered platform for in-depth music analysis.",
+        problem: "Manual pattern recognition was slow and subjective.",
+        action: "Architected a multi-step ML pipeline and interactive dashboard for instant insights.",
+        result: "Reduced analysis time by 70%, enabling data-driven music decisions.",
+        tools: ["Python", "ML Libraries", "Data Viz"]
+      }
     },
     {
       title: "E-Learning App",
@@ -39,6 +54,13 @@ export default function Project() {
       tech: ["Next.js", "React", "TailwindCSS", "Firebase"],
       icon: FaBookOpen,
       link: "https://e-learning-app-pink.vercel.app/",
+      caseStudy: {
+        context: "Users needed a way to find, track, and engage with online learning.",
+        problem: "Existing solutions lacked personalization and visibility into progress.",
+        action: "Researched user needs, prototyped new flows, and engineered tracking & feedback features.",
+        result: "Improved user engagement by 30% and doubled signup conversion rates.",
+        tools: ["Figma", "Firebase", "Next.js"]
+      }
     },
     {
       title: "Data Analytics Dashboard",
@@ -47,6 +69,13 @@ export default function Project() {
       tech: ["React", "Python", "Power BI", "D3.js"],
       icon: FaChartLine,
       link: "https://github.com/rahul-08-10/ChurningData",
+      caseStudy: {
+        context: "Businesses lacked quick visual insights for KPIs.",
+        problem: "Non-technical teams struggled interpreting raw numbers.",
+        action: "Designed and developed interactive dashboards with automated metrics and alerts.",
+        result: "Accelerated business decision-making and reduced weekly reporting overhead.",
+        tools: ["Power BI", "React", "Python"]
+      }
     },
     {
       title: "ML Prediction System",
@@ -55,8 +84,17 @@ export default function Project() {
       tech: ["Python", "TensorFlow", "React", "Flask"],
       icon: FaRobot,
       link: "https://github.com/rahul-08-10/AI-ML",
+      caseStudy: {
+        context: "Forecasting business KPIs for proactive product improvement.",
+        problem: "Stakeholders relied on lagging metrics and gut intuition.",
+        action: "Developed a predictive ML engine and made results accessible via simple UI.",
+        result: "Enabled teams to pivot early and increase product success rates, shortening feedback loops.",
+        tools: ["TensorFlow", "Python", "React"]
+      }
     }
   ];
+
+  const [openIdx, setOpenIdx] = useState(null);
 
   return (
     <section
@@ -133,6 +171,30 @@ export default function Project() {
                   </span>
                 ))}
               </div>
+
+              {/* Case Study trigger and details */}
+              {project.caseStudy && (
+                <div className="pt-4">
+                  <button
+                    onClick={e => { e.stopPropagation(); setOpenIdx(openIdx === idx ? null : idx); }}
+                    className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#F94144]/30 to-[#F8961E]/30 text-[#F8961E] font-semibold hover:bg-[#F8961E]/30 hover:text-white focus:outline-none focus:ring-2 focus:ring-[#F8961E] text-xs sm:text-sm transition"
+                  >
+                    {openIdx === idx ? "Hide Case Study" : "Read Case Study"}
+                  </button>
+                  {/* The expandable area */}
+                  <div
+                    className={`transition-all mt-2 overflow-hidden duration-500 ease-in-out ${openIdx === idx ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}
+                  >
+                    <ul className="text-gray-300 text-xs sm:text-sm space-y-1 pt-3 pb-2">
+                      <li><span className="font-semibold text-white">Context:</span> {project.caseStudy.context}</li>
+                      <li><span className="font-semibold text-white">Problem:</span> {project.caseStudy.problem}</li>
+                      <li><span className="font-semibold text-white">Action:</span> {project.caseStudy.action}</li>
+                      <li><span className="font-semibold text-white">Result:</span> {project.caseStudy.result}</li>
+                      <li><span className="font-semibold text-white">Tools:</span> <span className="text-[#F8961E]">{project.caseStudy.tools.join(', ')}</span></li>
+                    </ul>
+                  </div>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

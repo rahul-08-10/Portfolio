@@ -61,19 +61,18 @@ export default function Hero() {
               </h1>
             </div>
 
-            <div className="h-20 sm:h-24 md:h-20">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300">
-                I'm a{" "}
-                <span className="bg-gradient-to-r from-[#F94144] via-[#F8961E] to-[#F9C74F] bg-clip-text text-transparent font-bold">
-                  {displayText}
-                  <span className="animate-pulse text-[#F8961E]">|</span>
-                </span>
+            <div className="pt-2 pb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#F8961E] mb-1">
+                Product Manager | Bridging Tech & Business
+              </h2>
+              <p className="text-gray-300 text-base sm:text-lg lg:text-xl font-medium max-w-xl mx-auto md:mx-0 pt-2">
+                Former Software Developer passionate about building user-centered products that solve real-world problems.
               </p>
             </div>
 
             <p className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              I focus on creating engaging and visually appealing web applications
-              by writing thoughtful code and prioritizing user-friendly design.
+              I focus on creating engaging and visually appealing digital products
+              by combining technical knowledge with product strategy and user-centered design.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 sm:gap-4 pt-4 sm:pt-6">
