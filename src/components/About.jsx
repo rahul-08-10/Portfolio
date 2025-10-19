@@ -61,46 +61,11 @@ export default function About() {
             className="space-y-4 sm:space-y-6"
           >
             <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-              I’m <span className="text-white font-semibold">Rahul Jangid</span>, a <span className="text-white font-semibold">Full Stack Developer</span> and 
-              <span className="bg-gradient-to-r from-[#F94144] to-[#F8961E] bg-clip-text text-transparent font-semibold"> aspiring Product Manager</span> 
-              passionate about building impactful, user-centric products that combine great design, technology, and strategy.
+              I began my career as a software developer, where I learned how great products are built from the ground up. Over time, I became passionate about not just how products are made, but why they’re made — leading me toward product management.
             </p>
-
             <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-              My journey began in software development, where I worked extensively with the 
-              <span className="text-white font-semibold"> MERN stack, Next.js, and modern web technologies</span>. 
-              Over time, I realized my strength lies not only in coding but also in understanding 
-              <span className="bg-gradient-to-r from-[#F8961E] to-[#F9C74F] bg-clip-text text-transparent font-semibold"> user behavior, market needs, and product strategy</span>.
+              Today, I use my technical foundation to bridge communication between engineering, design, and business teams, helping deliver meaningful and scalable user experiences.
             </p>
-
-            <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-              Working in startup environments taught me how to think fast, adapt quickly, and 
-              align technical execution with business goals. I enjoy transforming ideas into 
-              <span className="text-white font-semibold"> real, scalable products</span> that solve meaningful problems — 
-              whether through technology, design thinking, or data-driven decisions.
-            </p>
-
-            <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4">
-              {["Product Thinking", "Full Stack Development", "User Empathy", "Team Collaboration", "Problem Solving"].map((trait, idx) => (
-                <span
-                  key={idx}
-                  className="bg-white/5 border border-white/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-gray-300 text-xs sm:text-sm hover:bg-white/10 hover:border-[#F8961E]/50 hover:scale-105 transition-all cursor-pointer active:scale-95"
-                >
-                  {trait}
-                </span>
-              ))}
-            </div>
-
-            <div className="pt-2 sm:pt-4">
-              <a
-                href="/Resume.docx"
-                download="Resume.docx"
-                className="inline-flex items-center gap-2 w-full sm:w-auto justify-center px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg bg-gradient-to-r from-[#F94144] via-[#F3722C] to-[#F8961E] text-white font-medium hover:shadow-lg hover:shadow-[#F8961E]/50 transition-all duration-300 hover:scale-105 active:scale-95 text-sm sm:text-base"
-              >
-                <FaDownload className="w-4 h-4" />
-                Download Resume
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>

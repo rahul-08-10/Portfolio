@@ -8,6 +8,15 @@ import {
 import { motion } from "framer-motion";
 
 export default function Skills() {
+  const productSkills = [
+    "Product Strategy & Roadmapping",
+    "User Research & Persona Building",
+    "A/B Testing & Analytics",
+    "Agile / Scrum",
+    "Prioritization Frameworks (RICE, MoSCoW)",
+    "Cross-functional Collaboration",
+    "Stakeholder Management"
+  ];
   const skills = [
     { name: "JavaScript", level: 90, icon: SiJavascript, color: "text-yellow-400" },
     { name: "Node.js", level: 85, icon: SiNodedotjs, color: "text-green-500" },
@@ -34,10 +43,42 @@ export default function Skills() {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            My Tech <span className="bg-gradient-to-r from-[#F94144] via-[#F8961E] to-[#F9C74F] bg-clip-text text-transparent">Skills</span>
+            Skills & <span className="bg-gradient-to-r from-[#F94144] via-[#F8961E] to-[#F9C74F] bg-clip-text text-transparent">Competencies</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#F94144] to-[#F8961E] mx-auto rounded-full mb-4" />
-          <p className="text-gray-400 text-sm sm:text-base lg:text-lg">Technologies I work with daily</p>
+          <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">Product management and technical expertise for end-to-end product building.</p>
+        </motion.div>
+
+        {/* Product Management Skills */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="mb-10 bg-white/5 backdrop-blur-sm rounded-2xl p-5 sm:p-6 lg:p-8 border border-white/10 hover:border-[#F8961E]/40 transition-all duration-300"
+        >
+          <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-4 sm:mb-6 text-center">Product Management Skills</h3>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+            {productSkills.map((skill, idx) => (
+              <span
+                key={idx}
+                className="bg-white/10 border border-white/10 px-3 sm:px-4 py-2 rounded-lg text-[#F8961E] text-xs sm:text-sm font-semibold hover:bg-white/20 hover:border-[#F8961E]/70 hover:scale-105 transition-all cursor-pointer active:scale-95"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Technical Skills */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.10 }}
+          className="mb-10"
+        >
+          <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-4 text-center">Technical Skills</h3>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
