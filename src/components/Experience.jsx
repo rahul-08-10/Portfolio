@@ -7,49 +7,51 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const experiences = [
     {
-      role: "Software Developer",
+      role: "Software Developer / Management (AI & Web Platforms)",
       company: "StarX AI Technology",
       period: "June 2025 – Present",
       location: "New Delhi (Remote)",
       description:
-        "Contributing to AI-driven web projects while collaborating with cross-functional teams to align technical execution with product goals. Working closely with AI engineers and PMs to design scalable solutions.",
+        "Driving product strategy and execution for AI-driven web initiatives. Partnering with engineering, design, and AI research teams to deliver scalable and user-centric solutions.",
       achievements: [
-        "Developed and optimized multiple AI-integrated web platforms using Next.js, React, and Node.js.",
-        "Collaborated with AI team to integrate LangChain and Streamlit for intelligent chatbot systems, improving user engagement.",
-        "Participated in product ideation meetings to define MVP scope and feature priorities.",
-        "Managed GitHub-based version control and coordinated smooth cross-team development workflows."
+        "Defined product requirements and led end-to-end delivery of AI-integrated web platforms.",
+        "Worked closely with AI engineers to integrate LangChain and Streamlit workflows, improving user engagement and task automation.",
+        "Owned MVP definition, feature prioritization, sprint planning, and roadmap alignment.",
+        "Coordinated cross-functional collaboration using GitHub, ensuring smooth development and timely releases.",
       ],
       icon: FaBrain,
       color: "from-indigo-500 to-purple-500",
     },
+  
     {
-      role: "MERN Stack Intern",
+      role: "Product Management Intern (MERN Ecosystem)",
       company: "KSBM Info Tech",
       period: "Aug 2024 – Jan 2025",
       location: "Noida (Hybrid)",
       description:
-        "Worked as part of the product development team to build full-stack solutions for real-world applications like LozerWin and Astro Platform.",
+        "Supported the product team in building scalable platforms such as LozerWin and Astro Platform by translating business needs into actionable product requirements.",
       achievements: [
-        "Designed and implemented RESTful APIs and database schemas for scalable web platforms.",
-        "Optimized API response times by 30% through query refinement and caching mechanisms.",
-        "Ensured seamless integration between front-end and back-end teams for consistent UX.",
-        "Contributed to sprint planning, backlog prioritization, and documentation processes."
+        "Developed user stories, acceptance criteria, and contributed to PRDs for new feature releases.",
+        "Collaborated with engineering to design APIs and data flows aligned with product goals.",
+        "Improved API response performance by coordinating optimization tasks between backend and infra teams.",
+        "Participated in Agile ceremonies—backlog grooming, sprint planning, and weekly product syncs.",
       ],
       icon: FaCogs,
       color: "from-purple-500 to-pink-500",
     },
+  
     {
-      role: "AI Chatbot & Web3 Product Builder (Personal Projects)",
+      role: "AI Chatbot & Web3 Product Builder",
       company: "Independent Projects",
       period: "2024 – Present",
       location: "Remote",
       description:
-        "Building end-to-end projects integrating AI and Web3 technologies with a focus on usability and business impact.",
+        "Building end-to-end product experiences in AI and Web3 with a focus on problem solving, usability, and validating real-world user needs.",
       achievements: [
-        "Created an AI chatbot using LangChain, LangGraph, and Streamlit — managing MVP scope and gathering user feedback.",
-        "Developed a team management system with JWT authentication and secure data flow.",
-        "Integrated MetaMask wallet authentication into a web app, enabling blockchain transactions.",
-        "Led product research and usability testing for non-crypto users to ensure smooth onboarding."
+        "Owned the product lifecycle of an AI chatbot built using LangChain, LangGraph, and Streamlit — from ideation to MVP launch and collecting user feedback.",
+        "Designed user flows and data architecture for a team management system with JWT-based secure access.",
+        "Introduced MetaMask authentication to improve onboarding for blockchain-enabled features.",
+        "Conducted user research and usability testing for non-crypto users to remove adoption barriers and refine product experience.",
       ],
       icon: FaBriefcase,
       color: "from-blue-500 to-cyan-500",

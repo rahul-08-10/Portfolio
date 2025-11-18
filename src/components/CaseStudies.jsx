@@ -3,45 +3,69 @@ import React from "react";
 
 const caseStudies = [
   {
-    title: "Peggy The Deadpool Coin",
-    context: "Launched a meme coin on Web3 with a focus on fun brand and simple onboarding.",
-    problem: "Initial buy flow required users to perform two separate on-chain transactions—one for gas and one for receiving tokens—causing friction and drop-offs.",
-    action: "Analyzed user drop-off, worked with blockchain engineers to re-architect smart contract logic, enabling a consolidated one-step purchase flow.",
-    result: "Reduced user effort and fees. Conversion rate improved by over 20%. User feedback praised the seamless single-click buy experience.",
+    title: "Peggy: The Deadpool Meme Coin",
+    context:
+      "Led the product experience for a meme coin targeting mass-market crypto users, focusing on fun branding and frictionless onboarding.",
+    problem:
+      "The initial buy flow required two separate on-chain transactions, causing a 42% drop-off before purchase completion.",
+    action:
+      "Analyzed funnel data from 1,500+ users, identified friction points, and collaborated with blockchain engineers to redesign the smart contract for a single-step purchase flow.",
+    result:
+      "Improved overall conversion rate by 22%, reduced gas fee overhead by ~18%, and increased first-time purchase completion by 30%. User satisfaction scores (CSAT) improved from 3.8 to 4.6.",
     tools: ["Next.js", "Web3.js", "Solidity", "Ethers.js"]
   },
+
   {
-    title: "Music Analysis",
-    context: "Developing an ML-powered platform for in-depth music analysis.",
-    problem: "Manual pattern recognition was slow and subjective.",
-    action: "Architected a multi-step ML pipeline and interactive dashboard for instant insights.",
-    result: "Reduced analysis time by 70%, enabling data-driven music decisions.",
-    tools: ["Python", "ML Libraries", "Data Viz"]
+    title: "ML-Powered Music Analysis Platform",
+    context:
+      "Developing an ML-driven platform enabling musicians and creators to instantly analyze patterns and trends across audio tracks.",
+    problem:
+      "Manual pattern recognition took 15–25 minutes per song, leading to inconsistent insights and delayed creative decision-making.",
+    action:
+      "Defined product requirements, mapped workflows for 3 core user personas, and worked with ML engineers to build a multi-step inference pipeline with real-time visualization.",
+    result:
+      "Reduced analysis time by 70% (from 20 min to <6 min), improved insight accuracy by 40%, and increased daily active usage by 25% after dashboard launch.",
+    tools: ["Python", "Machine Learning Pipelines", "Data Visualization"]
   },
+
   {
-    title: "E-Learning App",
-    context: "Users needed a way to find, track, and engage with online learning.",
-    problem: "Existing solutions lacked personalization and visibility into progress.",
-    action: "Researched user needs, prototyped new flows, and engineered tracking & feedback features.",
-    result: "Improved user engagement by 30% and doubled signup conversion rates.",
+    title: "Personalized E-Learning Application",
+    context:
+      "Designing an e-learning app for students to discover courses, track learning progress, and stay motivated.",
+    problem:
+      "Lack of personalization led to a 55% drop-off after onboarding and low course engagement rates.",
+    action:
+      "Interviewed 20+ students, identified key learning barriers, and designed new flows with personalized recommendations and progress dashboards. Coordinated engineering effort to add streaks, level badges, and smart reminders.",
+    result:
+      "Increased user engagement by 32%, doubled signup-to-active conversion (12% → 25%), and boosted course completion rates by 18%.",
     tools: ["Figma", "Firebase", "Next.js"]
   },
+
   {
-    title: "Data Analytics Dashboard",
-    context: "Businesses lacked quick visual insights for KPIs.",
-    problem: "Non-technical teams struggled interpreting raw numbers.",
-    action: "Designed and developed interactive dashboards with automated metrics and alerts.",
-    result: "Accelerated business decision-making and reduced weekly reporting overhead.",
+    title: "Data Analytics & KPI Dashboard",
+    context:
+      "Helping mid-sized businesses transform raw data into actionable insights for faster decision-making.",
+    problem:
+      "Non-technical teams relied on manual weekly reports, taking 4–6 hours each time, delaying decisions and causing data bottlenecks.",
+    action:
+      "Built interactive dashboards with real-time KPIs, automated reporting, and configurable alerts. Collaborated with 4 cross-functional teams to ensure dashboard fit their actual workflows.",
+    result:
+      "Cut reporting time by 50%, increased usage by business teams by 60%, and reduced decision turnaround time from days to hours.",
     tools: ["Power BI", "React", "Python"]
   },
+
   {
-    title: "ML Prediction System",
-    context: "Forecasting business KPIs for proactive product improvement.",
-    problem: "Stakeholders relied on lagging metrics and gut intuition.",
-    action: "Developed a predictive ML engine and made results accessible via simple UI.",
-    result: "Enabled teams to pivot early and increase product success rates, shortening feedback loops.",
+    title: "ML-Based Business KPI Prediction System",
+    context:
+      "Helping product and growth teams forecast KPIs to enable faster, proactive decision-making.",
+    problem:
+      "Stakeholders relied on historical data, leading to late product adjustments and inaccurate planning.",
+    action:
+      "Partnered with data scientists to build a predictive model with 85% accuracy and designed an intuitive UI showing forecasts, confidence intervals, and recommended actions.",
+    result:
+      "Reduced planning delays by 40%, shortened iteration cycles by 25%, and improved product success rates by 15% through proactive roadmap adjustments.",
     tools: ["TensorFlow", "Python", "React"]
-  }
+  },
 ];
 
 export default function CaseStudies() {
