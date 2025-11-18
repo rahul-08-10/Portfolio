@@ -10,7 +10,7 @@ export default function Experience() {
       role: "Software Developer / Management (AI & Web Platforms)",
       company: "StarX AI Technology",
       period: "June 2025 – Present",
-      location: "New Delhi (Remote)",
+      location: "New Delhi",
       description:
         "Driving product strategy and execution for AI-driven web initiatives. Partnering with engineering, design, and AI research teams to deliver scalable and user-centric solutions.",
       achievements: [
@@ -27,7 +27,7 @@ export default function Experience() {
       role: "Product Management Intern (MERN Ecosystem)",
       company: "KSBM Info Tech",
       period: "Aug 2024 – Jan 2025",
-      location: "Noida (Hybrid)",
+      location: "Noida",
       description:
         "Supported the product team in building scalable platforms such as LozerWin and Astro Platform by translating business needs into actionable product requirements.",
       achievements: [
